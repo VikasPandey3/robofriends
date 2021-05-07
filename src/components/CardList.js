@@ -1,7 +1,9 @@
 import React from 'react'
-import {robots} from '../robots'
 import Card from './Card'
-export default function CardList() {
+export default function CardList({robots}) {
+    // if(1){
+    //     throw new Error("Ohh no")
+    // }
     return (
         <div>
            {
