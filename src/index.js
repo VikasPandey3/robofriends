@@ -6,12 +6,12 @@ import reportWebVitals from './reportWebVitals';
 import {Provider} from 'react-redux'
 import {createStore,applyMiddleware,combineReducers} from 'redux'
 import {serchRobotreducer,requestRobotreducer} from './reducer'
-import {createLogger} from 'redux-logger'
+// import {createLogger} from 'redux-logger'
 import thunkMiddleware from 'redux-thunk'
 import 'tachyons'
-const logger=createLogger()
+// const logger=createLogger()
 const rootReducer=combineReducers({serchRobotreducer,requestRobotreducer})
-const store=createStore(rootReducer,applyMiddleware(thunkMiddleware,logger))
+const store=createStore(rootReducer,applyMiddleware(thunkMiddleware))
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
